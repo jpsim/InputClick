@@ -6,10 +6,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         UIButton *clickButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        clickButton.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        [clickButton
-         addTarget:[UIDevice currentDevice] action:@selector(playInputClick)
-         forControlEvents:UIControlEventTouchDown];
+        clickButton.frame = frame;
+        [clickButton addTarget:[UIDevice currentDevice] action:@selector(playInputClick) forControlEvents:UIControlEventTouchDown];
         [self addSubview:clickButton];
     }
     return self;
