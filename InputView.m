@@ -2,10 +2,6 @@
 
 @implementation InputView
 
-+ (InputView *)sharedInputView {
-    return [[InputView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
-}
-
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -30,7 +26,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.inputView = [InputView sharedInputView];
+        self.inputView = [[InputView alloc] initWithFrame:CGRectMake(0, 0, 320, 216)];
     }
     return self;
 }

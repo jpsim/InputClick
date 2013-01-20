@@ -5,6 +5,4 @@
 
 @interface InputView : UIView <UIInputViewAudioFeedback>
 
-+ (InputView *)sharedInputView;
-
 @end
