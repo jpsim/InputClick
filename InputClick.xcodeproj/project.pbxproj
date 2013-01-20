@@ -17,7 +17,7 @@
 		E806E10016AC5D350008ED9E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E806E0FF16AC5D350008ED9E /* Default@2x.png */; };
 		E806E10216AC5D350008ED9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E806E10116AC5D350008ED9E /* Default-568h@2x.png */; };
 		E806E10516AC5D350008ED9E /* MBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E806E10416AC5D350008ED9E /* MBViewController.m */; };
-		E806E10816AC5D350008ED9E /* MBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E806E10616AC5D350008ED9E /* MBViewController.xib */; };
+		E806E11016AC5D500008ED9E /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = E806E10F16AC5D500008ED9E /* InputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,8 @@
 		E806E10116AC5D350008ED9E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E806E10316AC5D350008ED9E /* MBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBViewController.h; sourceTree = "<group>"; };
 		E806E10416AC5D350008ED9E /* MBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBViewController.m; sourceTree = "<group>"; };
-		E806E10716AC5D350008ED9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MBViewController.xib; sourceTree = "<group>"; };
+		E806E10E16AC5D500008ED9E /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		E806E10F16AC5D500008ED9E /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,8 @@
 		E806E0DC16AC5D350008ED9E = {
 			isa = PBXGroup;
 			children = (
+				E806E10E16AC5D500008ED9E /* InputView.h */,
+				E806E10F16AC5D500008ED9E /* InputView.m */,
 				E806E0F116AC5D350008ED9E /* InputClick */,
 				E806E0EA16AC5D350008ED9E /* Frameworks */,
 				E806E0E816AC5D350008ED9E /* Products */,
@@ -87,7 +90,6 @@
 				E806E0FB16AC5D350008ED9E /* MBAppDelegate.m */,
 				E806E10316AC5D350008ED9E /* MBViewController.h */,
 				E806E10416AC5D350008ED9E /* MBViewController.m */,
-				E806E10616AC5D350008ED9E /* MBViewController.xib */,
 				E806E0F216AC5D350008ED9E /* Supporting Files */,
 			);
 			path = InputClick;
@@ -163,7 +165,6 @@
 				E806E0FE16AC5D350008ED9E /* Default.png in Resources */,
 				E806E10016AC5D350008ED9E /* Default@2x.png in Resources */,
 				E806E10216AC5D350008ED9E /* Default-568h@2x.png in Resources */,
-				E806E10816AC5D350008ED9E /* MBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +178,7 @@
 				E806E0F816AC5D350008ED9E /* main.m in Sources */,
 				E806E0FC16AC5D350008ED9E /* MBAppDelegate.m in Sources */,
 				E806E10516AC5D350008ED9E /* MBViewController.m in Sources */,
+				E806E11016AC5D500008ED9E /* InputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +191,6 @@
 				E806E0F516AC5D350008ED9E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E806E10616AC5D350008ED9E /* MBViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E806E10716AC5D350008ED9E /* en */,
-			);
-			name = MBViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

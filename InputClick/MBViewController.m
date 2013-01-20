@@ -1,29 +1,13 @@
-//
-//  MBViewController.m
-//  InputClick
-//
-//  Created by Jean-Pierre Simard on 1/20/13.
-//  Copyright (c) 2013 Magnetic Bear Studios. All rights reserved.
-//
-
 #import "MBViewController.h"
-
-@interface MBViewController ()
-
-@end
+#import "InputView.h"
 
 @implementation MBViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    InputField *field = [[InputField alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:field];
+    [field becomeFirstResponder];
 }
 
 @end
